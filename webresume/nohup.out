@@ -2133,3 +2133,4 @@ Not Found: /favicon.ico
 [05/Oct/2018 21:56:29] "GET /api/person/1/ HTTP/1.1" 200 498
 [05/Oct/2018 21:56:59] "GET /image.jpg HTTP/1.1" 200 44969
 [05/Oct/2018 21:59:05] "GET /image.jpg HTTP/1.1" 200 44969
+[05/Oct/2018 22:04:06] "GET / HTTP/1.1" 200 2658
