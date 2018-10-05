@@ -4,29 +4,41 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Insert Title Here</title>
+  <title>Assignment 3 setup</title>
 
 
   <!-- <link rel="stylesheet" href="style.css"> -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 
-<body>
-  <h1 id="name">Name</h1>
-  <p id="about">About</p>
-  <p id="education">Education</p>
-  <p id="skills">Skills</p>
-  <p id="work">Work</p>
-  <p id="contact">Contact</p>
+<body class="light-blue darken-3">
+    <div class="row flex">
+        <div class="grid-example col s6 m6">
+                <div class="divider"></div>
+                <blockquote class="hoverable">What is your name?<blockquote> <h5 id="name" class="hoverable">Name</h5></blockquote></blockquote>
+                <div class="divider"></div>
+                <blockquote class="hoverable">Who are you?<blockquote><h5 id="about" class="hoverable">About</h5></blockquote></blockquote>
+                <div class="divider"></div>
+                <blockquote class="hoverable">What is your education?<blockquote><h5 id="education" class="hoverable">Education</h5></blockquote></blockquote>
+                <div class="divider"></div>
+                <blockquote class="hoverable">What are your skills?<blockquote><h5 id="skills" class="hoverable">Skills<h5></blockquote></blockquote>
+                <div class="divider"></div>
+                <blockquote class="hoverable">Where do you work?<blockquote><h5 id="work" class="hoverable">Work<h5></blockquote></blockquote>
+                <div class="divider"></div>
+                <blockquote class="hoverable">Point of contact?<blockquote><h5 id="contact" class="hoverable">Contact<h5></blockquote></blockquote>
+        </div>
+    </div>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>
   $(window).on('load', function(){
      // change the URL to your server URL here
-     $.getJSON("http://127.0.0.1:8000/api/person/1/", function (data) {
+     $.getJSON("http://204.209.76.196:8000/api/person/1/", function (data) {
           $("#name").text(data.data.attributes.name);
           $("#about").text(data.data.attributes.about);
           $("#education").text(data.data.attributes.education);
           $("#skills").text(data.data.attributes.skills);
+        $("#work").text(data.data.attributes.work);
+        $("#contact").text(data.data.attributes.contact);
           // Complete consuming the API data and updating the work and contact sections
           // HINT: look at the above lines, jquery documentation, see what is the object returned
      
@@ -35,5 +47,6 @@
      });
   });
   </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
