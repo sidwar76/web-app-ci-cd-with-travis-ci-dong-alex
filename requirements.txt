@@ -29,7 +29,6 @@ PyForms==0.1.7.3
 pylint==2.1.1
 pyparsing==2.2.0
 pyserial==3.4
-pysettings==1.0.0
 pytest==3.9.3
 python-dateutil==2.7.3
 pytz==2018.5
