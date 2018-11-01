@@ -5,6 +5,7 @@ def test_home():
 
     # grab the elements for testing
     driver = webdriver.Chrome()
+    driver.implicitly_wait(20)
     driver.get("http://http://204.209.76.196:8000")
     name_element = driver.find_element_by_id("name").text
     about_element = driver.find_element_by_id("about").text
