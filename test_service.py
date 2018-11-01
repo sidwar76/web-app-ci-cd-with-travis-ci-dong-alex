@@ -40,7 +40,6 @@ class TestOperations(unittest.TestCase):
 
         mock_service.complicated_function = mock_service.divide, mock_service.bad_random % 2
         # mock the complicated function
-        print(mock_service.complicated_function)
         return
 
 TestOperations()
